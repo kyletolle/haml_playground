@@ -9,7 +9,15 @@
 
   .field
     = f.label :notes
-    = f.text_area :notes
+    = f.text_area :notes, rows: 10, cols: 20
+    = f.hidden_field :notes, class: "tester-notes", value: f.object.notes
 
   .actions
     = f.submit
+
+:coffee
+  $ ->
+    notesText = $('.tester-notes').val()
+    console.log notesText
+    $('textarea').val(notesText)
+
