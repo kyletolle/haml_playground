@@ -11,9 +11,7 @@ Things you may want to cover:
 
 * System dependencies
 
-```
-bundle _1.17.3_ install
-```
+> bundle _1.17.3_ install
 
 * Configuration
 
@@ -27,9 +25,7 @@ bundle _1.17.3_ install
 
 * Deployment instructions
 
-```
-git push heroku master
-```
+> git push heroku master
 
 * ...
 
